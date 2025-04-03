@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "go-mokapi": "^0.13.2"
+  }
+}
