@@ -1,3 +1,15 @@
+// Verificar conexión y mostrar estado
+function updateOnlineStatus() {
+    if (!navigator.onLine) {
+        alert("Estás trabajando en modo offline. Los cambios se sincronizarán cuando recuperes la conexión.");
+    }
+}
+
+window.addEventListener('online', updateOnlineStatus);
+window.addEventListener('offline', updateOnlineStatus);
+updateOnlineStatus();
+
+
 // URL MockAPI
 const API_URL = "https://67ed967f4387d9117bbe14ee.mockapi.io/api/v1/Registros";
 
